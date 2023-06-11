@@ -1,7 +1,5 @@
-# TNM098 - Project VAST MC1 2019
-Final project in course TNM098 - Advanced Visual Data Analysis at Linköping university VT2023
-
-Project is based on the VAST Minic-Challenge 1 from 2019 ([available here](https://vast-challenge.github.io/2019/MC1.html)). 
+# Project VAST 2019
+Project is based on the VAST Minic-Challenge 1 and 2 from 2019 ([available here](https://vast-challenge.github.io/2019/MC1.html)). 
 
 ## Setup instructions
 Proposed tool is created with [D3.js](https://d3js.org/) which requires a webserver to run. Setup is for live server in VSCode. Any other server method will work. 

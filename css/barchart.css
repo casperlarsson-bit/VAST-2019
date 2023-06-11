@@ -1,0 +1,7 @@
+.bar:hover {
+    cursor: pointer;
+}
+
+#bar-chart {
+    overflow: hidden;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNM098 - Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/uncertainty.css">
+    <link rel="stylesheet" href="css/barchart.css">
+    <link rel="stylesheet" href="css/linechart.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="column box-shadow" id="map-canvas">
+            <div id="control-panel">
+                <h3>Control panel</h3>
+                <hr />
+                <label for="category">Select category:</label>
+                <div id="select-attribute"></div>
+                <div id="checkbox-container">
+                    <p>
+                        <label>
+                            <input type="checkbox" id="checkbox1">
+                            Prequake overlay<br>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="checkbox2">
+                            Earthquake overlay
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="all-reports" checked>
+                            Individual reports
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="moving-average">
+                            Moving average
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="confidence-interval">
+                            Confidence interval
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <div id="time-range"></div>
+        </div>
+        <div class="column box-shadow" id="lineplot-canvas">
+            <h2 class="section-heading" id="linechart-heading"></h2>
+        </div>
+        <div class="column box-shadow" id="confidence">
+            <h2 class="section-heading">Box plot</h2>
+        </div>
+        <div class="column box-shadow" id="bar-chart">
+            <h2 class="section-heading">Number of reports</h2>
+        </div>
+    </div>
+
+</body>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+
+<script src="js/barchart.js"></script>
+<script src="js/confidence.js"></script>
+<script src="js/linechart.js"></script>
+<script src="js/histogram.js"></script>
+<script src="js/map.js"></script>
+
+</html>
